@@ -1,0 +1,54 @@
+html{
+    scroll-behavior: smooth;
+  }
+  
+  #landing-page {
+    background-image: url("https://tse4.mm.bing.net/th?id=OIP.7ax1OrivCKFC5bTyiDb28wHaEK&pid=Api&P=0");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .brand-logo{
+      position: relative;
+      top: 25vh;
+  }
+  
+  nav .btn-large{
+      position: relative;
+      top: 5vh;
+      border-radius: 20px;
+      border: .5 solid chocolate brown;
+  }
+   
+  @media screen and (max-width: 666px) {
+    #landing-page {
+      min-height: 450px;
+      background-position: -6.5em;
+    }
+  
+    .brand-logo{
+        position: relative;
+        top: -4vh;
+    }
+  }
+  
+  .slider{
+    min-height: 75vh;
+  }
+  
+   #search-bar{
+    min-height: 40vh;
+    padding-top: 40px;
+   }
+
+   .row{
+    /* text-align: center;
+    padding-right: 500px; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+   }
+
+   

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title>House of Taste</title>
+</head>
+
+<body>
+	<header id="landing-page">
+		<nav class="nav-wrapper transparent z-depth-0">
+			<div class="container">
+				<a href="#" data-target="mobile-nav" class=" large sidenav-trigger"><i class="material-icons large">account_circle</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="#logIn" class="transparent black-text modal-trigger btn-large">Log In</a></li>
+					<li><a href="#signUp" class="transparent black-text modal-trigger btn-large">Sign Up</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="row">
+			<div class="col s6"></div>
+			<div class="col s6 brand-logo">
+				<h1 class="black-text text-lighten-8">House of Taste</h1>
+				<h3 class="black-text text-lighten-3">You Order, We Deliver!!</h2>
+			</div>
+		</div>
+
+		<ul class="sidenav brown lighten-4" id="mobile-nav">
+			<li><a href="#logIn" class="modal-trigger" >Log In</a></li>
+			<li><a href="#signUp" class="modal-trigger">Sign Up</a></li>
+		</ul>
+
+		<!-- LogIn Modal -->
+		<div id="logIn" class="modal brown lighten-5">
+			<form class="modal-content">
+				<div class="input-field">
+					<input type="text" id="name">
+					<label class="active" for="name">Name</label>
+				</div>
+				<div class="input-field">
+					<input type="email" id="email" class="validate">
+					<label class="active" for="email">Email</label>
+				</div>
+				<input type="button" class="btn brown" value="Log In">				
+				<!-- <a class="modal-triggerbrown lighten-4" href="#signUp"><span>Create your Account</span></a> -->
+			</form>
+		</div>
+
+		<!-- SignUp Modal -->
+		<div id="signUp" class="modal brown lighten-5">
+			<form class="modal-content">
+				<div class="input-field">
+					<input type="text" id="name">
+					<label class="active" for="name">Name</label>
+				</div>
+				<div class="input-field">
+					<input type="email" id="email" class="validate">
+					<label class="active" for="email">Email</label>
+				</div>
+
+				<div class="input-field">
+					<input type="text" id="password1">
+					<label for="password1" class="active">Enter Password</label>
+				</div>
+
+				<div class="input-field">
+					<input type="password" id="password2">
+					<label for="password2" class="active">Confirm Password</label>
+				</div>
+				<input type="button" class="btn brown center" value="Sign Up">
+				<a class="modal-trigger brown lighten-4 margin-left-20px" href="#logIn"><span>Have an Account</span></a>
+			</form>
+		</div>
+	</header>
+
+
+	<!-- Fixed floating action button -->
+	<div class="fixed-action-btn">
+		<a class="btn-floating btn-large brown"><i class="large material-icons">menu</i></a>
+		<ul>
+			<li><a href="#landing-page" data-tooltip="Home" class="tooltipped btn-floating red lighten-2 btn-large"><i class="large material-icons">home</i></a></li>
+			<li><a href="#search-bar" data-tooltip="Search" class="tooltipped btn-floating blue lighten-2 btn-large"><i class="large material-icons">search</i></a></li>
+			<li><a href="#login" data-tooltip="User" class="tooltipped btn-floating blue lighten-2 btn-large"><i class="large material-icons">person</i></a></li>
+			<li><a href="#top-orders" data-tooltip="Top Orders" class="tooltipped btn-floating orange lighten-1 btn-large"><i class="large material-icons">menu_book</i></a></li>
+			<li><a href="#features" data-tooltip="Our Features" class="tooltipped btn-floating brown btn-large"><i class="large material-icons">star_rate</i></a></li>
+			<li><a href="#contact" data-tooltip="Contact Us" class="tooltipped btn-floating teal btn-large"><i class="large material-icons">call</i></a></li>
+		</ul>
+	</div>  
+
+	
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script>
+		$(document).ready(() => {
+			$('.modal').modal()
+			$('.sidenav').sidenav();
+		
+
+		})
+	</script> 
+
+</body>
+
+</html>
